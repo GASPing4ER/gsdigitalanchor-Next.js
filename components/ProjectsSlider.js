@@ -6,30 +6,30 @@ export default function ProjectsSlider(){
       <div className="overflow">
         <div className="projects-wrapper">
           <div className="projects-item">
-            <Image src={projectImg} className="projects-item-img" alt="project"/>
+            <Image src={projectImg} alt="project"/>
           </div>
           <div className="projects-item">
-            <Image src={projectImg} className="projects-item-img" alt="project"/>
+            <Image src={projectImg} alt="project"/>
           </div>
           <div className="projects-item">
-            <Image src={projectImg} className="projects-item-img" alt="project"/>
+            <Image src={projectImg} alt="project"/>
           </div>
           <div className="projects-item">
-            <Image src={projectImg} className="projects-item-img" alt="project"/>
+            <Image src={projectImg} alt="project"/>
           </div>
         </div>
         <div className="projects-wrapper">
           <div className="projects-item">
-            <Image src={projectImg} className="projects-item-img" alt="project"/>
+            <Image src={projectImg} alt="project"/>
           </div>
           <div className="projects-item">
-            <Image src={projectImg} className="projects-item-img" alt="project"/>
+            <Image src={projectImg} alt="project"/>
           </div>
           <div className="projects-item">
-            <Image src={projectImg} className="projects-item-img" alt="project"/>
+            <Image src={projectImg} alt="project"/>
           </div>
           <div className="projects-item">
-            <Image src={projectImg} className="projects-item-img" alt="project"/>
+            <Image src={projectImg} alt="project"/>
           </div>
         </div>
       </div>

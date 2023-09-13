@@ -223,11 +223,6 @@ header {
     overflow: hidden;
 }
 
-.projects-item-img {
-    height: 3.5rem;
-    width: 100%;
-}
-
 @keyframes projectsLoop {
     from {
         transform: translateX(0);
@@ -523,11 +518,18 @@ form button {
 }
 
 .footer-info {
-    display: flex;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
-    padding: 0 10vw;
+    padding: 20px 10vw;
     gap: 10vw;
+}
+
+.footer-about {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .footer-item {
@@ -540,35 +542,29 @@ form button {
     color: #091235;
 }
 
-.footer-info img{
-    width: 100%;
-    object-fit: cover;
-}
-
 .footer-socials p{
     font-size: 18px;
     font-style: italic;
     font-weight: 600;
 }
 
-.socials {
-    display: flex;
-    gap: 2vw;
+.faIcon {
+    width: 25px;
+    display: inline;
+}
+
+.first-icon {
+    margin-right: 50px;
 }
 
 @media (max-width: 900px) {
     .footer-info {
-        flex-direction: column;
         gap: 0;
-        text-align: center;
     }
     .footer-info img {
         width: 30%;
     }
-    .footer-about {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+    .footer-about {        
         font-size: 15px;
     }
     .footer-logo {

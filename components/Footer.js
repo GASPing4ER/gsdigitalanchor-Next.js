@@ -1,9 +1,8 @@
 import InstagramFeed from "./InstagramFeed";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import Link from "next/link";
-import Image from "next/image";
 
 export default function Footer() {
     return(
@@ -15,16 +14,12 @@ export default function Footer() {
                     <h2><Link href="/portfolio"><li>PORTFOLIO</li></Link></h2>
                     <h2><Link href="mailto:info@gsdigitalanchor.com"><li>INQUIRE</li></Link></h2>
                 </div>
-                <div className="footer-item footer-logo">
-                    <Link href="/"><Image src="@public/images/logos/logo_trans.png" alt="gsdigitalanchor"/></Link>
-                </div>
                 <div className="footer-item footer-socials">
                     <p>AN AUTHENTIC WEBSITE ORIENTED AGENCY FOR 
                         VIBRANT BRANDS WITH A UNIQUE VISION</p>
                     <div className="socials">
-                        <FontAwesomeIcon icon={faFacebookF}/>
-                        <a href="https://www.instagram.com/gsdigitalanchor/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram}/></a>
-                        <a href="mailto:info@gsdigitalanchor.com"><FontAwesomeIcon icon={faEnvelope}/></a>
+                        <Link href="https://www.instagram.com/gsdigitalanchor/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="faIcon first-icon" icon={faInstagram}/></Link>
+                        <Link href="mailto:info@gsdigitalanchor.com"><FontAwesomeIcon className="faIcon" icon={faEnvelope}/></Link>
                     </div>
                 </div>
             </div>

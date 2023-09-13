@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image"
 
+import lamaisondigitale from "@public/images/case-studies/lamaison.jpg"
+import vitus from "@public/images/case-studies/vitus.jpeg"
+import modelmindset from "@public/images/case-studies/modelmindset.jpeg"
+import impero from "@public/images/case-studies/impero.jpg"
+
 export default function CaseStudies() {
     return(
         <div className="case-study">
@@ -9,14 +14,14 @@ export default function CaseStudies() {
             <p className="case-study-p">Browse our journal to learn more about our projects, our inspiration,<br/> stories, and beautiful designs.</p>
             <div className="case-studies">
                 <div className="main">
-                    <Image src="@public/images/case-studies/lamaison.jpg" alt="lamaisondigital"/>
+                    <Image src={lamaisondigitale} alt="lamaisondigital"/>
                     <p>CASE STUDY No 1</p>
                     <h1>LA MAISON DIGITALE</h1>
                     <h2>DIGITAL MARKETING AGENCY</h2>
                 </div>
                 <div className="side-studies">
                     <div className="side">
-                        <Image src="@public/images/case-studies/vitus.jpeg" alt="vitus"/>
+                        <Image src={vitus} alt="vitus"/>
                         <div className="side-content">
                             <p>CASE STUDY No 2</p>
                             <h1>VITUS</h1>
@@ -24,7 +29,7 @@ export default function CaseStudies() {
                         </div>
                     </div>
                     <div className="side">
-                        <Image src="@public/images/case-studies/modelmindset.jpeg" alt="modelmindset"/>
+                        <Image src={modelmindset} alt="modelmindset"/>
                         <div className="side-content">
                             <p>CASE STUDY No 3</p>
                             <h1>MODEL MINDSET</h1>
@@ -32,7 +37,7 @@ export default function CaseStudies() {
                         </div>
                     </div>
                     <div className="side">
-                        <Image src="@public/images/case-studies/impero.jpeg" alt="impero"/>
+                        <Image src={impero} alt="impero"/>
                         <div className="side-content">
                             <p>CASE STUDY No 4</p>
                             <h1>IMPERO</h1>

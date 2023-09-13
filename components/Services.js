@@ -1,8 +1,8 @@
 import Service from "./Service"
 import Link from "next/link"
-import serviceOne from "@public/images/services/service-1.jpeg"
-import serviceTwo from "@public/images/services/service-2.jpeg"
-import serviceThree from "@public/images/services/service-3.jpeg"
+import serviceOne from "@public/images/services/service-1.jpg"
+import serviceTwo from "@public/images/services/service-2.jpg"
+import serviceThree from "@public/images/services/service-3.jpg"
 
 export default function Services() {
     return(

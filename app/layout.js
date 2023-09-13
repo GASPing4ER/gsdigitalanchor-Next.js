@@ -1,5 +1,6 @@
 import Header from '@components/Header'
 import Footer from "@components/Footer"
+import { Analytics } from '@vercel/analytics/react';
 
 import './globals.css'
 import { Cormorant_Garamond, Montserrat } from 'next/font/google'
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
         <Header />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   )

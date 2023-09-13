@@ -1,0 +1,60 @@
+.services-hero{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../images/services.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.services-hero h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    max-width: 750px;
+    color: #fff;
+    margin-top: 20vh;
+}
+
+.services-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    gap: 50px;
+    padding: 50px;
+    text-align: center;
+    background-color: #FFFDF8;
+}
+
+.services-item {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.services-item:hover {
+    transform: translateY(-5px); /* Add a slight lift effect on hover */
+  }
+
+.services-item img {
+    width: 200px;
+}
+
+.services-item h2 {
+    margin-top: -20px;
+    color: #091235;
+    font-size: 30px;
+}
+
+.services-item p {
+    font-size: 18px;
+    padding: 0 20px;
+}
+
+@media (max-width: 899px) {
+    .services-details {
+        display: flex;
+        flex-direction: column;
+    }
+}

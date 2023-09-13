@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     height: 100vh;
-    background-image: url("../images/services.png");
+    background-image: url("../public/images/services.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -38,7 +38,8 @@
   }
 
 .services-item img {
-    width: 200px;
+    width: 250px;
+    height: 250px;
 }
 
 .services-item h2 {

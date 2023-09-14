@@ -1,8 +1,8 @@
 import Service from "./Service"
 import Link from "next/link"
-import serviceOne from "@public/images/services/service-1.jpg"
-import serviceTwo from "@public/images/services/service-2.jpg"
-import serviceThree from "@public/images/services/service-3.jpg"
+import serviceOne from "@public/images/services/service-1.webp"
+import serviceTwo from "@public/images/services/service-2.webp"
+import serviceThree from "@public/images/services/service-3.webp"
 
 export default function Services() {
     return(

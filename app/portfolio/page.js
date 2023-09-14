@@ -1,11 +1,11 @@
 import "@styles/portfolio.css"
 
-import MentalModel from "@public/icons/logo/mental-model.png"
-import VitusHome from "@public/icons/logo/vitus-home.png"
-import ElevateEstate from "@public/icons/logo/elevate-estate.png"
-import LuxuryHotel from "@public/icons/logo/luxury-hotel.png"
-import Turin from "@public/icons/logo/turin.png"
-import LeteciLevi from "@public/icons/logo/leteci-levi.png"
+import MentalModel from "@public/images/logo/mental-model.webp"
+import VitusHome from "@public/images/logo/vitus-home.webp"
+import ElevateEstate from "@public/images/logo/elevate-estate.png"
+import LuxuryHotel from "@public/images/logo/luxury-hotel.webp"
+import Turin from "@public/images/logo/turin.webp"
+import LeteciLevi from "@public/images/logo/leteci-levi.webp"
 
 import MobilePortfolio from "@public/images/mobile-portfolio.png"
 import DesktopPortfolio from "@public/images/desktop-portfolio.png"

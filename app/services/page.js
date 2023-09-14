@@ -1,9 +1,9 @@
 import "@styles/services.css"
 import Testimonials from "@components/Testimonials"
-import BrandIdenIcon from "@public/icons/branding-identity.png"
-import DesignDevelIcon from "@public/icons/design-development.png"
-import CopySeoIcon from "@public/icons/copywriting-seo.png"
-import AnalyticsIcon from "@public/icons/analytics.png"
+import BrandIdenIcon from "@public/images/icons/branding-identity.png"
+import DesignDevelIcon from "@public/images/icons/design-development.png"
+import CopySeoIcon from "@public/images/icons/copywriting-seo.png"
+import AnalyticsIcon from "@public/images/icons/analytics.png"
 
 import Image from "next/image"
 

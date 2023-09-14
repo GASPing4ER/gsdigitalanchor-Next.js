@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image"
 
-import lamaisondigitale from "@public/images/case-studies/lamaison.jpg"
+import lamaisondigitale from "@public/images/case-studies/lamaison.jpeg"
 import vitus from "@public/images/case-studies/vitus.jpeg"
 import modelmindset from "@public/images/case-studies/modelmindset.jpeg"
-import impero from "@public/images/case-studies/impero.jpg"
+import impero from "@public/images/case-studies/impero.jpeg"
 
 export default function CaseStudies() {
     return(

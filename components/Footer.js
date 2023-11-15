@@ -17,10 +17,10 @@ export default function Footer() {
                 <div className="footer-item footer-socials">
                     <p>AN AUTHENTIC WEBSITE ORIENTED AGENCY FOR 
                         VIBRANT BRANDS WITH A UNIQUE VISION</p>
-                    <div className="socials">
+                </div>
+                <div className="socials">
                         <Link href="https://www.instagram.com/gsdigitalanchor/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="faIcon first-icon" icon={faInstagram}/></Link>
                         <Link href="mailto:info@gsdigitalanchor.com"><FontAwesomeIcon className="faIcon" icon={faEnvelope}/></Link>
-                    </div>
                 </div>
             </div>
             <InstagramFeed />

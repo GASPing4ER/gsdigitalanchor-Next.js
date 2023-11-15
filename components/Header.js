@@ -17,11 +17,11 @@ const Header = () => {
                 <h1 className="header-h1-mobile">G.S. DIGITAL ANCHOR</h1>
             </div>
             <ul className={`${openMenu} menu`}>
-                <Link href="/about"><li>ABOUT</li></Link>
-                <Link href="/services"><li>SERVICES</li></Link>
-                <Link href="/"><li className="header-h1">G.S. DIGITAL ANCHOR</li></Link>
-                <Link href="/portfolio"><li>PORTFOLIO</li></Link>
-                <Link href="mailto:info@gsdigitalanchor.com"><li>INQUIRE</li></Link>
+                <Link href="/about" alt="about-us page"><li id="about-redirect">ABOUT</li></Link>
+                <Link href="/services" alt="services page"><li id="services-redirect">SERVICES</li></Link>
+                <Link href="/" alt="home page"><li id="home-redirect" className="header-h1">G.S. DIGITAL ANCHOR</li></Link>
+                <Link href="/portfolio" alt="portfolio page"><li id="portfolio-redirect">PORTFOLIO</li></Link>
+                <Link href="mailto:info@gsdigitalanchor.com" alt="send us mail"><li id="inquire-redirect">INQUIRE</li></Link>
             </ul>
         </header>
   )

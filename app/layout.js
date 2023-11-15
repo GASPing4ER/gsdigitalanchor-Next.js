@@ -3,10 +3,9 @@ import Footer from "@components/Footer"
 import { Analytics } from '@vercel/analytics/react';
 
 import './globals.css'
-import { Cormorant_Garamond, Montserrat } from 'next/font/google'
+import { Cormorant_Garamond } from 'next/font/google'
 
 const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ["400", "500", "600", "700"], })
-const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'G.S. Digital Anchor',

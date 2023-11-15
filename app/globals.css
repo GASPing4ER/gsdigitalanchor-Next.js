@@ -168,6 +168,36 @@ header {
     font-weight: 400;
 }
 
+@media (max-height: 850px) {
+    .hero-left {
+        width: 8rem;
+    }
+    .hero-section {
+        width: calc(100% - 8rem);
+    }
+    .hero-left h1{
+        font-size: 4rem;
+    }
+}
+
+@media (max-height: 750px) {
+    .hero-left h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-height: 600px) {
+    .hero-left {
+        width: 6rem;
+    }
+    .hero-section {
+        width: calc(100% - 6rem);
+    }
+    .hero-left h1{
+        font-size: 3rem;
+    }
+}
+
 @media (max-width: 800px) {
     .hero-section {
         width: 100%;

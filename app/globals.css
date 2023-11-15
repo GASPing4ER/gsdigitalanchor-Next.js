@@ -156,7 +156,7 @@ header {
 .hero-section{
     height: 100vh;
     width: calc(100vw - 12rem);
-    background-image: url("../public/images/home.jpg");
+    background-image: url("../public/images/home.webp");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

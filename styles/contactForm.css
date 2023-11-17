@@ -1,0 +1,116 @@
+.contactForm {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 2.5rem;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.contactForm input {
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #AB7952;
+    color: #AB7952;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contactForm input:focus { 
+    outline: none !important;
+    /* border-color: #AB7952;
+    box-shadow: 0 0 10px #AB7952; */
+ }
+
+.contactForm input::placeholder{
+    color: #AB7952;
+    font-size: 2.5rem;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button-div button {
+    margin-top: 25px;
+    background-color: transparent;
+    font-size: 2rem;
+    color: #AB7952;
+    border-radius: 20px;
+    border: 1px solid #091235;
+}
+
+.button-div button:hover {
+    background-color: #091235;
+    color: #fff;
+}
+
+@media (max-width: 869px) {
+    .contactForm {
+        font-size: 2rem;
+    }
+    .contactForm input {
+        font-size: 2rem;
+    }
+    .contactForm input::placeholder{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 729px) {
+    .contactForm {
+        font-size: 1.75rem;
+    }
+    .contactForm input {
+        font-size: 1.75rem;
+    }
+    .contactForm input::placeholder{
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 529px) {
+    .contactForm {
+        font-size: 1.5rem;
+    }
+    .contactForm input {
+        font-size: 1.5rem;
+    }
+    .contactForm input::placeholder{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 469px) {
+    .contactForm {
+        font-size: 1.2rem;
+    }
+    .contactForm input {
+        font-size: 1.2rem;
+    }
+    .contactForm input::placeholder{
+        font-size: 1.2rem;
+    }
+    .button-div button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 379px) {
+    .contactForm {
+        font-size: 1rem;
+    }
+    .contactForm input {
+        font-size: 1rem;
+    }
+    .contactForm input::placeholder{
+        font-size: 1rem;
+    }
+    .button-div button {
+        font-size: 1.25rem;
+    }
+}

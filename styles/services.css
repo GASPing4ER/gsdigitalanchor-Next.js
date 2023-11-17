@@ -1,66 +1,161 @@
-.services-hero{
-    display: flex;
-    justify-content: center;
-    height: 100vh;
-    background-image: url("../public/images/services.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.services-hero {
+    padding-top: 15vh;
+    background-color: #FFFDF8;
+    padding-bottom: 50px;
 }
 
 .services-hero h1 {
-    text-align: center;
-    font-size: 50px;
-    font-weight: 500;
-    max-width: 750px;
-    color: #fff;
-    margin-top: 20vh;
+    font-size: 4rem;
 }
 
-.services-details {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, 1fr); 
-    gap: 50px;
+.services-hero h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.niche {
+    color: #AB7952;
+    border-bottom: 1px solid #AB7952;
+}
+
+.services-hero hr {
+    width: 60%;
+    color: #AB7952;
+}
+
+.service-section {
     padding: 50px;
-    text-align: center;
     background-color: #FFFDF8;
+    gap: 30px;
 }
 
-.services-item {
+.service-overview {
+    width: 50%;
+}
+
+.service-items {
+    flex: 1;
+}
+
+.service-items-pair {
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-radius: 20px;
-    transition: transform 0.2s ease-in-out;
-    padding: 20px;
 }
 
-.services-item:hover {
-    transform: translateY(-5px); /* Add a slight lift effect on hover */
-  }
-
-.services-item img {
-    width: 250px;
-    height: 250px;
+.service-overview h2 {
+    font-size: 3rem;
+    font-weight: 500;
 }
 
-.services-item h2 {
-    margin-top: -20px;
+.service-overview p {
+    font-size: 1.25rem;
+    padding-right: 50px;
+}
+
+.service-item h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #AB7952;
+}
+
+.service-item li {
+    font-size: 1.25rem;
+}
+
+.services-bottom {
+    background-color: #FFFDF8;
+    padding: 50px 0;
+}
+
+.services-bottom h1 {
+    font-size: 4rem;
+}
+
+.services-bottom h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.niche {
+    color: #AB7952;
+    border-bottom: 1px solid #AB7952;
+}
+
+.services-bottom hr {
+    width: 60%;
     color: #091235;
-    font-size: 30px;
 }
 
-.services-item p {
-    font-size: 18px;
-    padding: 0 20px;
-}
-
-@media (max-width: 899px) {
-    .services-details {
-        display: flex;
+@media (max-width: 1060px) {
+    .service-section {
         flex-direction: column;
+        align-items: center;
+    }
+    .second-services {
+        flex-direction: column-reverse;
+    }
+    .service-items-pair {
+        flex: none;
+    }
+    .service-overview {
+        width: 90%;
+        text-align: center;
+    }
+    .service-overview p {
+        padding-right: 0;
+    }
+    .services-hero {
+        text-align: center;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 520px) {
+    .service-items-pair {
+        flex-direction: column;
+    }
+    .service-overview {
+        width: 100%;
+        text-align: left;
+    }
+    .service-overview h2 {
+        font-size: 2rem;
+    }
+    .service-overview p {
+        font-size: 1rem;
+    }
+    .service-section {
+        align-items: baseline;
+    }
+    .services-hero h1 {
+        font-size: 3.5rem;
+    }
+    .services-hero h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 729px) {
+    .services-bottom h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 469px) {
+    .services-bottom h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 379px) {
+    .services-bottom h1 {
+        font-size: 2rem;
+    }
+    .services-hero h1 {
+        font-size: 3rem;
+    }
+    .service-overview h2 {
+        font-size: 1.5rem;
     }
 }

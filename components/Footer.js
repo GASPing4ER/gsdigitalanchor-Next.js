@@ -1,4 +1,3 @@
-import InstagramFeed from "./InstagramFeed";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
@@ -23,7 +22,6 @@ export default function Footer() {
                         <Link href="mailto:info@gsdigitalanchor.com"><FontAwesomeIcon className="faIcon" icon={faEnvelope}/></Link>
                 </div>
             </div>
-            <InstagramFeed />
             <div className="after-footer">
                 <p>© 2023 G.S. DIGITAL ANCHOR</p>
                 <p>TERMS AND CONDITIONS</p>

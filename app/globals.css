@@ -322,7 +322,7 @@ header {
 
 .testimonials {
     border: 1px solid black;
-    padding: 100px 0;
+    padding: 100px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -364,6 +364,24 @@ header {
 .testimonials-h2 {
     font-weight: 500;
     font-style: italic;
+}
+
+@media (max-width: 789px) {
+    .testimonials-h1 {
+        font-size: 2.5rem;
+    }
+    .testimonial p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 529px) {
+    .testimonials-h1 {
+        font-size: 2rem;
+    }
+    .testimonial p {
+        font-size: 1.25rem;
+    }
 }
 
 /* CASE STUDIES */
@@ -425,6 +443,10 @@ header {
     margin: 0;
 }
 
+.main p {
+    margin-top: 20px;
+}
+
 .main h2 {
     font-size: 20px;
     font-weight: 500;
@@ -476,9 +498,6 @@ header {
     }
     .main h2 {
         text-align: center;
-    }
-    .main p {
-        margin-top: 30px;
     }
     .side-studies {
         width: 100%;

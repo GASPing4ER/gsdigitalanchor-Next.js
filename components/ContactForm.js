@@ -1,9 +1,5 @@
 import "../styles/contactForm.css"
 import React, { useState } from 'react';
-
-const apiKey = 'X9dZuM';
-const listId = 'YgQhum'; 
-
 import { Cormorant_Garamond } from 'next/font/google'
 
 const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ["400", "500", "600", "700"], })
@@ -19,34 +15,27 @@ const ContactForm = () => {
   const handleSubmit = async(e) => {
     e.preventDefault()
 
-    let dataToSend = {
-        name: name,
-        email: email,
-        niche: niche,
-        brand: brand
-    }
-
-    const url = `https://a.klaviyo.com/api/v2/list/${listId}/members?api_key=${apiKey}`;
-    fetch(url, {
-        method: "POST",
+    try {
+      const response = await fetch(`/api/add-contact?name=${name}&email=${email}&niche=${niche}&brand=${brand}`, {
+        method: 'GET', // Assuming your serverless function is a GET endpoint
         headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify(dataToSend),
-    })
-    .then(response => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
+          'Content-Type': 'application/json',
         }
-        return response.json();
-      })
-      .then(data => {
-        console.log('Data sent successfully:', data);
-      })
-      .catch(error => {
-        console.error('Error sending data to Klaviyo:', error.message);
-    });
-}
+      });
+  
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error);
+      }
+  
+      // Handle success, you can do something with the response if needed
+      const responseData = await response.json();
+      console.log('Contact added successfully:', responseData);
+    } catch (error) {
+      console.error('Error adding contact:', error.message);
+      // Handle error, you might want to display an error message to the user
+    }
+  };
 
   return (
     <form onSubmit={handleSubmit}>

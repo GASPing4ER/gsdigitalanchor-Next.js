@@ -1,8 +1,11 @@
 import "../styles/contactForm.css"
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Cormorant_Garamond } from 'next/font/google'
+import { push, ref, set } from "firebase/database"
+import { database } from "@db";
 
-const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ["400", "500", "600", "700"], })
+
+const cormorant = Cormorant_Garamond({ subsets: ['latin'], weight: ["400", "500", "600", "700"], });
 
 import '../styles/contactForm.css';
 
@@ -15,30 +18,33 @@ const ContactForm = () => {
   const handleSubmit = async(e) => {
     e.preventDefault()
 
+    if (!name || !email || !niche || !brand) {
+      alert("Fill out the form!")
+      return
+    }
+
     try {
-      const response = await fetch(`/api/add-contact?name=${name}&email=${email}&niche=${niche}&brand=${brand}`, {
-        method: 'GET', // Assuming your serverless function is a GET endpoint
-        headers: {
-          'Content-Type': 'application/json',
-        }
+      const usersRef = ref(database, "users");
+      const newDataRef = push(usersRef);
+
+      set(newDataRef, {
+        name: name,
+        email: email,
+        niche: niche,
+        brand: brand
       });
-  
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error);
-      }
-  
-      // Handle success, you can do something with the response if needed
-      const responseData = await response.json();
-      console.log('Contact added successfully:', responseData);
-    } catch (error) {
-      console.error('Error adding contact:', error.message);
-      // Handle error, you might want to display an error message to the user
+      setName("");
+      setEmail("");
+      setNiche("");
+      setBrand("");
+      alert("Inquiry sent successfully!")
+    } catch(error) {
+      console.error("Firebase Error!", error)
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form>
         <div className="contactForm">
             <p>Hi, my name is </p>
             <input
@@ -49,6 +55,7 @@ const ContactForm = () => {
                 onChange={(e) => setName(e.target.value)}
                 style={{ maxWidth: `${Math.max(115, name.length * 16)}px` }}
                 className={cormorant.className}
+                required
             />
             <p>. I am in a</p>
             <input
@@ -59,6 +66,7 @@ const ContactForm = () => {
                 onChange={(e) => setNiche(e.target.value)}
                 style={{ maxWidth: `${Math.max(175, niche.length * 16)}px` }}
                 className={cormorant.className}
+                required
             />
             <p>business. My brand name is</p>
             <input
@@ -69,6 +77,7 @@ const ContactForm = () => {
                 onChange={(e) => setBrand(e.target.value)}
                 style={{ maxWidth: `${Math.max(300, brand.length * 16)}px` }}
                 className={cormorant.className}
+                required
             />
             <p>.</p>
             <p>You can contact me at</p>
@@ -80,10 +89,11 @@ const ContactForm = () => {
                 onChange={(e) => setEmail(e.target.value)}
                 style={{ maxWidth: `${Math.max(420, email.length * 16)}px` }}
                 className={cormorant.className}
+                required
             />
             <p>.</p>
         </div>
-        <div className="button-div"><button type="submit" className={cormorant.className}>Let's talk soon!</button></div>
+        <div className="button-div"><button onClick={handleSubmit} className={cormorant.className}>Let's talk soon!</button></div>
     </form>
   )
 }

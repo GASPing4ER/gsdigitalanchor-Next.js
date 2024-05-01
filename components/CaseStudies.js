@@ -25,7 +25,7 @@ export default function CaseStudies() {
                         <div className="side-content">
                             <p>CASE STUDY No 2</p>
                             <h1>VITUS</h1>
-                            <Link href="/portfolio"><h2>EXPLORE MORE</h2></Link>
+                            <Link href="#"><h2>EXPLORE MORE</h2></Link>
                         </div>
                     </div>
                     <div className="side">
@@ -33,7 +33,7 @@ export default function CaseStudies() {
                         <div className="side-content">
                             <p>CASE STUDY No 3</p>
                             <h1>MODEL MINDSET</h1>
-                            <Link href="/portfolio"><h2>EXPLORE MORE</h2></Link>
+                            <Link href="#"><h2>EXPLORE MORE</h2></Link>
                         </div>
                     </div>
                     <div className="side">
@@ -41,7 +41,7 @@ export default function CaseStudies() {
                         <div className="side-content">
                             <p>CASE STUDY No 4</p>
                             <h1>IMPERO</h1>
-                            <Link href="/portfolio"><h2>EXPLORE MORE</h2></Link>
+                            <Link href="#"><h2>EXPLORE MORE</h2></Link>
                         </div>
                     </div>
                 </div>

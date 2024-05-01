@@ -83,7 +83,7 @@ const ContactForm = () => {
             />
             <p>.</p>
         </div>
-        <div className="button-div"><button className={cormorant.className}>Let's talk soon!</button></div>
+        <div className="button-div"><button type="submit" className={cormorant.className}>Let's talk soon!</button></div>
     </form>
   )
 }

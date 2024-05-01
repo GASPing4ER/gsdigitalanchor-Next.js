@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image"
 
-import lamaisondigitale from "@public/images/case-studies/lamaison.jpeg"
+import glowinface from "@public/images/case-studies/glowinface.jpeg"
 import vitus from "@public/images/case-studies/vitus.jpeg"
 import modelmindset from "@public/images/case-studies/modelmindset.jpeg"
-import impero from "@public/images/case-studies/impero.jpeg"
+import lamaison from "@public/images/case-studies/lamaison.jpeg"
 
 export default function CaseStudies() {
     return(
@@ -14,10 +14,10 @@ export default function CaseStudies() {
             <p className="case-study-p">Browse our journal to learn more about our projects, our inspiration, stories, and beautiful designs.</p>
             <div className="case-studies">
                 <div className="main">
-                    <Image src={lamaisondigitale} alt="lamaisondigital"/>
+                    <Image src={glowinface} alt="lamaisondigital"/>
                     <p>CASE STUDY No 1</p>
-                    <h1>LA MAISON DIGITALE</h1>
-                    <h2>DIGITAL MARKETING AGENCY</h2>
+                    <h1>GLOWINFACE</h1>
+                    <h2>Face Yoga Studio</h2>
                 </div>
                 <div className="side-studies">
                     <div className="side">
@@ -37,10 +37,10 @@ export default function CaseStudies() {
                         </div>
                     </div>
                     <div className="side">
-                        <Image src={impero} alt="impero"/>
+                        <Image src={lamaison} alt="impero"/>
                         <div className="side-content">
                             <p>CASE STUDY No 4</p>
-                            <h1>IMPERO</h1>
+                            <h1>LA MAISON DIGITALE</h1>
                             <Link href="#"><h2>EXPLORE MORE</h2></Link>
                         </div>
                     </div>

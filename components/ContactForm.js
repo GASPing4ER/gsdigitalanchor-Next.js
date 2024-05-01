@@ -61,7 +61,7 @@ const ContactForm = () => {
             <input
                 name='niche'
                 type='text'
-                placeholder='restaurant'
+                placeholder='clothing'
                 value={niche}
                 onChange={(e) => setNiche(e.target.value)}
                 style={{ maxWidth: `${Math.max(175, niche.length * 16)}px` }}

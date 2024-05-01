@@ -5,7 +5,7 @@ import Testimonials from "@components/Testimonials";
 import ContactForm from "@components/ContactForm";
 import { useState, useEffect } from 'react';
 
-const niche = ["Restaurant", "Cafe", "Food", "Beverage"]
+const niche = ["Fashion", "Health", "Beauty", "Sports"]
 
 export default function ServicesPage() {
     const [count, setCount] = useState(0);
@@ -22,7 +22,7 @@ export default function ServicesPage() {
     return(
         <>
             <div className="services-hero flex-column flex align-center justify-center">
-                <h1>WHERE FLAVOR MEETS FAME</h1>
+                <h1>SETTING SAIL FOR EXCELLENCE ONLINE</h1>
                 <hr />
                 <h2>Propel Your <span className="niche">{niche[count]}</span> Brand into the Limelight with Our Assistance</h2>
             </div>
@@ -31,16 +31,16 @@ export default function ServicesPage() {
                 <div className="service-overview">
                     <h2>DESIGN & CONTENT CREATION</h2>
                     <hr />
-                    <p>From mouthwatering menu designs that entice diners to immersive brand stories that showcase your unique culinary journey, we are dedicated to helping your establishment stand out in a crowded market. Our services extend to creating eye-catching social media graphics, appetizing promotional materials, and cohesive brand identities that leave a lasting impression.</p>
+                    <p>From captivating visual experiences that draw in shoppers to compelling brand narratives that highlight your distinct style or wellness journey, we are committed to elevating your presence in a competitive market. Our offerings span from crafting engaging social media visuals, enticing promotional content, to unified brand identities that resonate with your audience long after they've clicked 'buy'.</p>
                 </div>
                 <div className="service-items-pair">
                     <div className="service-items">
                         <div className="service-item">
                             <h3>Photography & Videography</h3>
                             <ul>
-                                <li>Food & Beverages</li>
-                                <li>Chef & Culinary Team </li>
-                                <li>Ambiance & Interior Shots</li>
+                                <li>Professional Photoshoots</li>
+                                <li>Product Videos</li>
+                                <li>Lifestyle Imagery</li>
                                 <li>Special Events & Promotions</li>
                                 <li>Social Media Material</li>
                             </ul>
@@ -49,7 +49,7 @@ export default function ServicesPage() {
                             <h3>Designing & Printing</h3>
                             <ul>
                                 <li>Business Cards</li>
-                                <li>Menus</li>
+                                <li>Brochures</li>
                                 <li>Labels</li>
                                 <li>Packaging</li>
                                 <li>Promotional Material</li>
@@ -131,7 +131,7 @@ export default function ServicesPage() {
                 <div className="service-overview">
                     <h2>SOCIAL MEDIA MARKETING</h2>
                     <hr />
-                    <p>We specialize in crafting delectable digital experiences, from visually enticing posts showcasing your culinary masterpieces to strategic campaigns that engage and captivate your audience. ✨ Whether you're a trendy cafe, a fine dining restaurant, or a beverage brand, we tailor our approach to suit your unique flavor and style.</p>
+                    <p>"We specialize in crafting captivating social media experiences, from visually stunning posts highlighting your latest fashion trends to strategic campaigns that engage and inspire your audience. ✨ Whether you're in the fashion, health, beauty, or sports industry, we tailor our approach to amplify your unique brand voice and style, ensuring your message resonates with your target audience."</p>
                 </div>
            </div>
            <hr />
@@ -139,7 +139,7 @@ export default function ServicesPage() {
                 <div className="service-overview">
                     <h2>WEB DEVELOPMENT</h2>
                     <hr />
-                    <p>From bespoke WordPress solutions to meticulous code development, we specialize in creating visually stunning, user-friendly websites that captivate and convert. Elevate your online presence with our expert web design, ensuring that your culinary story is not just told but experienced. Need ongoing support? Our dedicated web maintenance ensures your site stays fresh and flawless, leaving you free to focus on creating exceptional culinary experiences.</p>
+                    <p>From custom WordPress solutions to meticulous code development, we specialize in creating visually stunning, user-friendly websites that not only captivate but drive sales. Elevate your online presence with our expert web design, ensuring that your products are showcased to perfection, enticing customers to make a purchase. Need ongoing support? Our dedicated web maintenance ensures your site stays fresh and flawless, leaving you free to focus on growing your business and delivering exceptional customer experiences.</p>
                 </div>
                 <div className="service-items-pair">
                     <div className="service-items">

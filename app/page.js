@@ -4,7 +4,7 @@ import Testimonials from "../components/Testimonials"
 import CaseStudies from "../components/CaseStudies"
 import PricingPackage from "../components/PricingPackage"
 import { useState, useEffect } from 'react';
-const left_headings = ["DIGITAL AGENCY", "FOR RESTAURANTS", "FOOD & BEVERAGES"]
+const left_headings = ["DIGITAL AGENCY", "FOR FASHION", "HEALTH & BEAUTY"]
 
 export default function Home() {
     const [count, setCount] = useState(0);
@@ -26,7 +26,7 @@ export default function Home() {
                 </div>
                 <div className="hero-section flex gap-2 align-center justify-center">
                     <div>
-                        <h1>SERVING SUCCESS <br/> <span className="italic">One Bite at a Time</span></h1>
+                        <h1>SMOOTH SAILING <br/> <span className="italic">to E-Commerce Triumph</span></h1>
                     </div>
                 </div>
             </div>

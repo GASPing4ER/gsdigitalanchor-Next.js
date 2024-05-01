@@ -24,7 +24,7 @@ const ContactForm = () => {
     }
 
     try {
-      const usersRef = ref(database, "users");
+      const usersRef = ref(database, "inquiry");
       const newDataRef = push(usersRef);
 
       set(newDataRef, {
